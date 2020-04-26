@@ -18,7 +18,7 @@ const httpLink = createHttpLink({     // this is function that accespt parameter
   uri: 'https://www.crwn-clothing.com/'    // this is end point of our GraphQl playgroupnd
 });
 
-const cache = InMemoryCache();        // This is a class
+const cache = new InMemoryCache();        // This is a class
 
 const client = new ApolloClient({     // Apollo Client
   link: httpLink,
